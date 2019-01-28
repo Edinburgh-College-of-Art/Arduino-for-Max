@@ -15,5 +15,5 @@ void loop()
 {
   byte volume = map(analogRead(volumePin), 0, 1024, 0, 255);
   Serial.write(volume);
-  delay(10);
+  delay(50);
 }
