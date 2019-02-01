@@ -4,7 +4,7 @@
     Print some values to Serial and see what they look like in Proessing/MaxMSP
 */
 
-int controlPin[] = {A0, A1};
+int controlPin[] = {A0, A1, A2, A3, A4};
 
 void setup()
 {
@@ -14,7 +14,7 @@ void setup()
 void loop()
 {
 
-  for (byte i = 0; i < 2; ++i)
+  for (byte i = 0; i < 5; ++i)
   {
     byte val = map(analogRead(controlPin[i]), 0, 1024, 0, 255);
     Serial.write(i);
