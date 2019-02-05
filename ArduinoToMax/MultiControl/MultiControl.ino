@@ -13,7 +13,6 @@ void setup()
 
 void loop()
 {
-
   for (byte i = 0; i < 5; ++i)
   {
     byte val = map(analogRead(controlPin[i]), 0, 1024, 0, 255);
