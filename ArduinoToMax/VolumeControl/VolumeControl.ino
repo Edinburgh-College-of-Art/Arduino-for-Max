@@ -1,7 +1,7 @@
 /*
-   Print Serial
+   Volume Control
 
-    Print some values to Serial and see what they look like in Proessing/MaxMSP
+   Get Reading from analog pin and send to Max
 */
 
 int volumePin = A1;

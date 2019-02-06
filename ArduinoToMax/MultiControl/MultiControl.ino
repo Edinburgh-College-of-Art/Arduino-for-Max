@@ -1,7 +1,5 @@
-/*
-   Print Serial
-
-    Print some values to Serial and see what they look like in Proessing/MaxMSP
+/* Multi Control
+ *  Output multiple values read from analog pins
 */
 
 int controlPin[] = {A0, A1, A2, A3, A4};

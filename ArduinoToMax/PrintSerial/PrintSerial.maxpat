@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 84.0, 106.0, 640.0, 480.0 ],
+		"rect" : [ 84.0, 106.0, 333.0, 313.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 30.0,
+					"id" : "obj-42",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 18.999981, 19.0, 157.0, 40.0 ],
+					"style" : "",
+					"text" : "Print Serial"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 93.133362, 34.0, 22.0, 22.0 ],
+					"patching_rect" : [ 31.133362, 72.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -58,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 93.133362, 79.0, 78.0, 22.0 ],
+					"patching_rect" : [ 31.133362, 112.0, 78.0, 22.0 ],
 					"style" : "",
 					"text" : "qmetro 1000"
 				}
@@ -72,7 +85,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 93.133362, 173.0, 99.0, 23.0 ],
+					"patching_rect" : [ 31.133362, 190.0, 99.0, 23.0 ],
 					"style" : "",
 					"text" : "print RawSerial"
 				}
@@ -94,7 +107,7 @@
 					"numoutlets" : 1,
 					"offset" : [ -34.0, -176.0 ],
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 93.133362, 123.537506, 151.0, 23.0 ],
+					"patching_rect" : [ 31.133362, 147.537506, 151.0, 23.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -103,7 +116,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 102.633362, 57.0, 102.633362, 57.0 ],
+					"midpoints" : [ 40.633362, 95.0, 40.633362, 95.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -111,7 +124,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 102.633362, 102.0, 102.633362, 102.0 ],
+					"midpoints" : [ 40.633362, 135.0, 40.633362, 135.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -119,7 +132,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
-					"midpoints" : [ 102.633362, 147.0, 102.633362, 147.0 ],
+					"midpoints" : [ 40.633362, 180.0, 40.633362, 180.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -128,7 +141,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "set_serial.maxpat",
 				"bootpath" : "~/OneDrive - University of Edinburgh/DDT/Workshops/ArduinoForMax/tools",
-				"patcherrelativepath" : "../../tools",
+				"patcherrelativepath" : "../../../../../OneDrive - University of Edinburgh/DDT/Workshops/ArduinoForMax/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}

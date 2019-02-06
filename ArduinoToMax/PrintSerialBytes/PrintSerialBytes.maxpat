@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 84.0, 106.0, 640.0, 480.0 ],
+		"rect" : [ 84.0, 106.0, 339.0, 429.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 30.0,
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 18.999981, 19.0, 241.0, 40.0 ],
+					"style" : "",
+					"text" : "Print Serial Bytes"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 221.0, 318.0, 114.0, 23.0 ],
+					"patching_rect" : [ 149.0, 354.0, 114.0, 23.0 ],
 					"style" : "",
 					"text" : "print BitShiftSerial"
 				}
@@ -57,7 +70,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 221.0, 281.0, 29.5, 22.0 ],
+					"patching_rect" : [ 149.0, 317.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "|"
 				}
@@ -70,7 +83,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 221.0, 210.0, 61.0, 22.0 ],
+					"patching_rect" : [ 149.0, 246.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack i i"
 				}
@@ -83,7 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 245.0, 247.128845, 35.0, 22.0 ],
+					"patching_rect" : [ 173.0, 283.128845, 35.0, 22.0 ],
 					"style" : "",
 					"text" : "<< 8"
 				}
@@ -96,7 +109,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 221.0, 175.0, 63.0, 22.0 ],
+					"patching_rect" : [ 149.0, 211.0, 63.0, 22.0 ],
 					"style" : "",
 					"text" : "zl group 2"
 				}
@@ -110,7 +123,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 93.133362, 34.0, 22.0, 22.0 ],
+					"patching_rect" : [ 18.999981, 70.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -124,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 93.133362, 79.0, 78.0, 22.0 ],
+					"patching_rect" : [ 18.999981, 115.0, 78.0, 22.0 ],
 					"style" : "",
 					"text" : "qmetro 1000"
 				}
@@ -138,7 +151,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 93.133362, 318.0, 99.0, 23.0 ],
+					"patching_rect" : [ 18.999981, 354.0, 99.0, 23.0 ],
 					"style" : "",
 					"text" : "print RawSerial"
 				}
@@ -160,7 +173,7 @@
 					"numoutlets" : 1,
 					"offset" : [ -34.0, -176.0 ],
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 93.133362, 123.537506, 151.0, 23.0 ],
+					"patching_rect" : [ 18.999981, 159.537506, 151.0, 23.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -169,7 +182,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 102.633362, 57.0, 102.633362, 57.0 ],
+					"midpoints" : [ 28.499981, 93.0, 28.499981, 93.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -177,7 +190,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 102.633362, 102.0, 102.633362, 102.0 ],
+					"midpoints" : [ 28.499981, 138.0, 28.499981, 138.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -185,7 +198,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"midpoints" : [ 230.5, 198.0, 230.5, 198.0 ],
+					"midpoints" : [ 158.5, 234.0, 158.5, 234.0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -193,7 +206,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 1 ],
-					"midpoints" : [ 254.5, 270.0, 243.0, 270.0, 243.0, 276.0, 241.0, 276.0 ],
+					"midpoints" : [ 182.5, 306.0, 171.0, 306.0, 171.0, 312.0, 169.0, 312.0 ],
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -201,7 +214,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 272.5, 234.0, 254.5, 234.0 ],
+					"midpoints" : [ 200.5, 270.0, 182.5, 270.0 ],
 					"source" : [ "obj-42", 1 ]
 				}
 
@@ -209,7 +222,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"midpoints" : [ 230.5, 234.0, 230.5, 234.0 ],
+					"midpoints" : [ 158.5, 270.0, 158.5, 270.0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -217,7 +230,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 230.5, 306.0, 230.5, 306.0 ],
+					"midpoints" : [ 158.5, 342.0, 158.5, 342.0 ],
 					"source" : [ "obj-48", 0 ]
 				}
 
@@ -225,7 +238,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
-					"midpoints" : [ 102.633362, 147.0, 102.633362, 147.0 ],
+					"midpoints" : [ 28.499981, 183.0, 28.499981, 183.0 ],
 					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
@@ -234,7 +247,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"midpoints" : [ 102.633362, 162.0, 230.5, 162.0 ],
+					"midpoints" : [ 28.499981, 198.0, 158.5, 198.0 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
@@ -244,7 +257,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "set_serial.maxpat",
 				"bootpath" : "~/OneDrive - University of Edinburgh/DDT/Workshops/ArduinoForMax/tools",
-				"patcherrelativepath" : "../../tools",
+				"patcherrelativepath" : "../../../../../OneDrive - University of Edinburgh/DDT/Workshops/ArduinoForMax/tools",
 				"type" : "JSON",
 				"implicit" : 1
 			}
