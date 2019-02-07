@@ -38,6 +38,56 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 227.833344, 595.0, 186.0, 33.0 ],
+					"style" : "",
+					"text" : "zlclear group to make sure bytes come in correct order"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 138.100021, 606.0, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "print Group"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 394.0, 381.0, 68.0, 22.0 ],
+					"style" : "",
+					"text" : "print Serial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 172.0, 554.0, 45.0, 22.0 ],
+					"style" : "",
+					"text" : "zlclear"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-55",
@@ -205,6 +255,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -522,7 +573,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 44.600018, 577.0, 71.0, 23.0 ],
+					"patching_rect" : [ 44.600018, 580.0, 71.0, 23.0 ],
 					"style" : "",
 					"text" : "zl group 2"
 				}
@@ -914,6 +965,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"midpoints" : [ 295.000061, 129.0, 295.000061, 129.0 ],
 					"source" : [ "obj-44", 0 ]
@@ -971,7 +1029,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
-					"midpoints" : [ 295.5, 558.0, 225.0, 558.0, 225.0, 447.0, 250.100021, 447.0 ],
+					"midpoints" : [ 295.5, 558.0, 282.0, 558.0, 282.0, 510.0, 294.0, 510.0, 294.0, 438.0, 250.100021, 438.0 ],
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -1004,9 +1062,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-85", 1 ],
 					"midpoints" : [ 295.000061, 438.0, 285.100021, 438.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -1015,7 +1081,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-87", 1 ],
 					"midpoints" : [ 295.000061, 438.0, 204.0, 438.0, 204.0, 516.0, 89.100018, 516.0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -1110,8 +1176,18 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 250.100021, 558.0, 219.0, 558.0, 219.0, 540.0, 181.5, 540.0 ],
+					"order" : 1,
+					"source" : [ "obj-82", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"midpoints" : [ 250.100021, 558.0, 250.100021, 558.0 ],
+					"order" : 0,
 					"source" : [ "obj-82", 0 ]
 				}
 
@@ -1204,7 +1280,7 @@
 				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.153687, 1.0 ],
 					"destination" : [ "obj-59", 0 ],
-					"midpoints" : [ 54.100018, 630.0, 225.0, 630.0, 225.0, 369.0, 295.000061, 369.0 ],
+					"midpoints" : [ 54.100018, 630.0, 30.0, 630.0, 30.0, 507.0, 225.0, 507.0, 225.0, 369.0, 295.000061, 369.0 ],
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -1219,8 +1295,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-89", 0 ],
-					"midpoints" : [ 54.100018, 603.0, 54.100018, 603.0 ],
+					"midpoints" : [ 54.100018, 606.0, 54.100018, 606.0 ],
+					"order" : 1,
 					"source" : [ "obj-90", 0 ]
 				}
 
@@ -1307,8 +1392,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
