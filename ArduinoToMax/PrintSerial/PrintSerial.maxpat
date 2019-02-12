@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 84.0, 106.0, 333.0, 313.0 ],
+		"rect" : [ 84.0, 106.0, 282.0, 281.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,107 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 55.133362, 72.0, 73.0, 20.0 ],
+					"style" : "",
+					"text" : "Read Bytes"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 164.0, 73.037521, 65.0, 20.0 ],
+					"style" : "",
+					"text" : "Open Port"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 134.0, 102.0, 62.0, 22.0 ],
+					"style" : "",
+					"text" : "select 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 134.0, 73.037521, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 563.5, 134.417389, 21.0, 21.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 127.0, 130.537506, 39.0, 22.0 ],
+					"style" : "",
+					"text" : "close"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 175.0, 130.537506, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "" ],
+					"patching_rect" : [ 31.133362, 158.200287, 62.0, 19.0 ],
+					"style" : "",
+					"text" : "serial c 9600"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 30.0,
 					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.999981, 19.0, 157.0, 40.0 ],
+					"patching_rect" : [ 15.0, 12.0, 157.0, 40.0 ],
 					"style" : "",
 					"text" : "Print Serial"
 				}
@@ -93,22 +188,18 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.19 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-6",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "set_serial.maxpat",
+					"angle" : 270.0,
+					"bgcolor" : [ 0.52549, 0.062745, 0.003922, 0.25 ],
+					"id" : "obj-64",
+					"maxclass" : "panel",
+					"mode" : 0,
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ -34.0, -176.0 ],
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 31.133362, 147.537506, 151.0, 23.0 ],
-					"viewvisibility" : 1
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 65.0, 231.000061, 164.515411 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 418.5, 93.115128, 327.000061, 186.013702 ],
+					"proportion" : 0.39,
+					"style" : "panelGreen"
 				}
 
 			}
@@ -116,14 +207,14 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 40.633362, 95.0, 40.633362, 95.0 ],
+					"midpoints" : [ 40.633362, 96.0, 40.633362, 96.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"midpoints" : [ 40.633362, 135.0, 40.633362, 135.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -133,19 +224,52 @@
 				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
 					"midpoints" : [ 40.633362, 180.0, 40.633362, 180.0 ],
-					"source" : [ "obj-6", 0 ]
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"midpoints" : [ 165.0, 126.0, 184.5, 126.0 ],
+					"source" : [ "obj-39", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 143.5, 126.0, 136.5, 126.0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"midpoints" : [ 143.5, 99.0, 143.5, 99.0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 184.5, 162.0, 105.0, 162.0, 105.0, 144.0, 40.633362, 144.0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 136.5, 153.0, 105.0, 153.0, 105.0, 144.0, 40.633362, 144.0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "set_serial.maxpat",
-				"bootpath" : "~/OneDrive - University of Edinburgh/DDT/Workshops/ArduinoForMax/tools",
-				"patcherrelativepath" : "../../../../../OneDrive - University of Edinburgh/DDT/Workshops/ArduinoForMax/tools",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjBlue-1",
@@ -186,8 +310,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

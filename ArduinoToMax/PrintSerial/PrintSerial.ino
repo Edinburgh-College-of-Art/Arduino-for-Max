@@ -2,7 +2,7 @@
  * Print Serial
  * 
  *  Print some values to Serial and see what they look like in Proessing/MaxMSP
-*/
+ */
 
 void setup()
 {

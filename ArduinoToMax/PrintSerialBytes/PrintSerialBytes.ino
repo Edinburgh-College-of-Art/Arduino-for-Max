@@ -12,7 +12,7 @@ void setup()
 
 void loop()
 {
-  for (uint16_t i = 65000; i <= 66000; ++i)
+  for (uint16_t i = 255; i <= 300; ++i)
   {    
     Serial.write(i);
     Serial.write((i>>8));

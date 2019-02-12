@@ -4,7 +4,7 @@
    Get Reading from analog pin and send to Max
 */
 
-int volumePin = A1;
+int volumePin = A0;
 
 void setup()
 {
