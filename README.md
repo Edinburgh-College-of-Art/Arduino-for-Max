@@ -49,7 +49,7 @@ Included as a little extra is a patch to get the envelope of an audio signal and
 This example demonstrates a very basic VU Meter. The Max patch is almost identical to the LedEnvelope example. The only exception is that the envelope is rounded to a value between 0 and 5. Envelope is sourced from the `gain~` slider, try different positions and see what happens.
 On the Arduino end there are couple of interesting things happening. First we make a list of all the pins we will be using. Make sure to follow the wiring or alter the pin numbers to match your own wiring.
 
-![Wiring Diagram](MaxToArduino/VuMeter/VuMeterWiring.pdf?raw=true "WiringDiagram")
+![Wiring Diagram](MaxToArduino/VuMeter/VuMeterWiring.jpg?raw=true "WiringDiagram")
 
 ```c++
 int led[] = {3, 5, 6, 9, 10};
