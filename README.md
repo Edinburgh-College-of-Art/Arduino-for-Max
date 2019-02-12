@@ -4,7 +4,7 @@ A collection of Examples for communicating between the Arduino and Cycling '74's
 
 ## Contents
 
-- [MaxToArduino](#platforms)
+- [MaxToArduino](#MaxToArduino)
   - [PhysicalPixel](#PhysicalPixel)
   - [Dimmer](#Dimmer)
     - [LedEnvelope](#LedEnvelope)
