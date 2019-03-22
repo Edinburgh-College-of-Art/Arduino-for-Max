@@ -39,7 +39,7 @@ if (Serial.available())
 }
 ```
 
-On the Max side of things, make sure you check which serial port your Arduino is connected to by pressing the print message. The toggle is just a slightly nicer way of opening and closing the the serial port.
+On the Max side of things, *make sure you check which serial port your Arduino is connected to by pressing the print message*. The toggle is just a slightly nicer way of opening and closing the the serial port.
 
 #### LedEnvelope
 
